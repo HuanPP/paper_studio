@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "id": "network",
+      "name": "计算机网络",
+      "short": "网工",
+      "description": "五套模拟试题，覆盖物理到数据链路层核心考点",
+      "accent": "#8cc9a7",
+      "onAccent": "#062314",
+      "exams": [
+        {
+          "title": "计算机网络模拟试题 1",
+          "year": "2025",
+          "season": "fall",
+          "note": "模拟",
+          "file": "assets/papers/模拟试题1.pdf"
+        },
+        {
+          "title": "计算机网络模拟试题 2",
+          "year": "2025",
+          "season": "fall",
+          "note": "模拟",
+          "file": "assets/papers/模拟试题2.pdf"
+        },
+        {
+          "title": "计算机网络模拟试题 3",
+          "year": "2025",
+          "season": "fall",
+          "note": "模拟",
+          "file": "assets/papers/模拟试题3.pdf"
+        },
+        {
+          "title": "计算机网络模拟试题 4",
+          "year": "2025",
+          "season": "fall",
+          "note": "模拟",
+          "file": "assets/papers/模拟试题4.pdf"
+        },
+        {
+          "title": "计算机网络模拟试题 5",
+          "year": "2025",
+          "season": "fall",
+          "note": "模拟",
+          "file": "assets/papers/模拟试题5.pdf"
+        }
+      ]
+    },
+    {
+      "id": "algorithm",
+      "name": "算法设计与分析",
+      "short": "算法",
+      "description": "动态规划，贪心策略，分治等专项为主的题目合集",
+      "exams": [
+        {
+          "title": "分治_回溯_模式匹配",
+          "year": "2025",
+          "season": "夏",
+          "note": "专项",
+          "file": "assets/papers/algorithm-pdf-1763199287038.pdf"
+        },
+        {
+          "title": "贪心策略",
+          "year": "2025",
+          "season": "夏",
+          "note": "专项",
+          "file": "assets/papers/algorithm-pdf-1763199211375.pdf"
+        },
+        {
+          "title": "动态规划",
+          "year": "2025",
+          "season": "夏",
+          "note": "专项",
+          "file": "assets/papers/algorithm-pdf-1763199175146.pdf"
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "数据库系统",
+      "short": "数据库",
+      "description": "数据库期末考试题",
+      "exams": [
+        {
+          "title": "数据库-期末往年试题5",
+          "year": "2025",
+          "season": "夏",
+          "note": "期末",
+          "file": "assets/papers/sql-sql-real5-1-pdf-1763199725973.pdf"
+        },
+        {
+          "title": "数据库-期末往年试题4",
+          "year": "2025",
+          "season": "夏",
+          "note": "期末",
+          "file": "assets/papers/sql-sql-real4-1-pdf-1763199689167.pdf"
+        },
+        {
+          "title": "数据库-期末往年试题3",
+          "year": "2025",
+          "season": "夏",
+          "note": "期末",
+          "file": "assets/papers/sql-sql-real3-pdf-1763199649569.pdf"
+        },
+        {
+          "title": "数据库-期末往年试题2",
+          "year": "2025",
+          "season": "夏",
+          "note": "期末",
+          "file": "assets/papers/sql-sql-real2-1-pdf-1763199604683.pdf"
+        },
+        {
+          "title": "数据库-期末往年试题1",
+          "year": "2025",
+          "season": "夏",
+          "note": "期末",
+          "file": "assets/papers/sql-sql-real1-1-pdf-1763199568328.pdf"
+        }
+      ]
+    }
+  ]
+}

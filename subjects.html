@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-page="subjects">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Studio | 全部科目</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="app-bar elevation-2">
+      <div class="app-bar__branding">
+        <span class="material-symbols-outlined" aria-hidden="true">ink_eraser</span>
+        <div>
+          <p class="eyebrow">My Paper Studio</p>
+          <h1>Paper Studio</h1>
+        </div>
+      </div>
+      <nav class="app-bar__nav">
+        <a class="text-button" href="index.html">主页</a>
+        <a class="tonal-button" href="subjects.html">全部科目</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subject-explorer surface-container-low">
+        <div class="subject-explorer__header">
+          <div>
+            <p class="eyebrow">Subjects</p>
+            <h3>全部科目</h3>
+          </div>
+          <p>点击任意科目卡片进入 Finder 风格的详情页。</p>
+        </div>
+        <div id="subjectSquareGrid" class="subject-square-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <template id="subjectSquareTemplate">
+      <button class="subject-square" type="button">
+        <div class="subject-square__accent"></div>
+        <div class="subject-square__content">
+          <p class="subject-square__name"></p>
+          <p class="subject-square__count"></p>
+        </div>
+      </button>
+    </template>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

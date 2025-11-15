@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-page="landing">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Studio | 试卷陈列</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="app-bar elevation-2">
+      <div class="app-bar__branding">
+        <span class="material-symbols-outlined" aria-hidden="true">ink_eraser</span>
+        <div>
+          <p class="eyebrow">My Paper Studio</p>
+          <h1>Paper Studio</h1>
+        </div>
+      </div>
+      <nav class="app-bar__nav">
+        <a class="text-button" href="index.html">主页</a>
+        <a class="tonal-button" href="subjects.html">浏览全部科目</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero surface-container">
+        <div class="hero__content">
+          <h2>解决考试训练资源匮乏的问题</h2>
+          <p>
+            Paper Studio是一个试卷站，在这里你可以找到老师不提供模拟题科目的试题，帮助你完成备考
+          </p>
+          <form id="landingSearchForm" class="search-shell" role="search">
+            <label class="sr-only" for="homeSearch">搜索科目或考试</label>
+            <span class="material-symbols-outlined" aria-hidden="true">search</span>
+            <input
+              id="homeSearch"
+              type="search"
+              placeholder="输入科目名称或考试标题，回车直接跳转"
+              autocomplete="off"
+            />
+          </form>
+          <div class="hero__cta">
+            <a id="browseAll" class="filled-button" href="subjects.html">
+              浏览全部科目
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

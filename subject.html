@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-page="detail">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Studio | 科目详情</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="app-bar elevation-2">
+      <div class="app-bar__branding">
+        <span class="material-symbols-outlined" aria-hidden="true">ink_eraser</span>
+        <div>
+          <p class="eyebrow">My Paper Studio</p>
+          <h1>Paper Studio</h1>
+        </div>
+      </div>
+      <nav class="app-bar__nav">
+        <a class="text-button" href="subjects.html">全部科目</a>
+        <a class="tonal-button" href="index.html">返回主页</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subject-detail surface-container">
+        <div class="subject-detail__header">
+          <a class="tonal-button" href="subjects.html">
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+            全部科目
+          </a>
+          <div class="subject-detail__title">
+            <p class="eyebrow" id="detailBreadcrumb">Paper Studio</p>
+            <h3 id="detailTitle"></h3>
+            <p id="detailMeta"></p>
+          </div>
+        </div>
+        <div class="finder-layout">
+          <div class="finder-panel finder-panel--list">
+            <ul id="detailExamList" class="finder-list"></ul>
+          </div>
+          <div class="finder-panel finder-panel--preview">
+            <div class="finder-preview" id="finderPreview">
+              <div class="finder-preview__placeholder" id="previewPlaceholder">
+                <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
+                <p>选择一套试卷以预览</p>
+              </div>
+              <iframe
+                id="detailPreviewFrame"
+                title="试卷预览"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                hidden
+              ></iframe>
+              <div class="finder-preview__info" id="previewInfo" hidden>
+                <div>
+                  <h4 id="previewTitle"></h4>
+                  <p id="previewMeta"></p>
+                </div>
+                <a id="previewDownload" class="tonal-button" target="_blank" download>
+                  <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                  下载 PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template id="finderExamTemplate">
+      <li class="finder-item">
+        <div>
+          <p class="finder-item__title"></p>
+          <p class="finder-item__meta"></p>
+        </div>
+        <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+      </li>
+    </template>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

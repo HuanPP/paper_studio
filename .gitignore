@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Local admin tooling (do not push to GitHub)
+tools/
+admin/
+/tmp/
+node_modules/
